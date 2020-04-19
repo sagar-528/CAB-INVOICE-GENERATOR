@@ -2,12 +2,11 @@ public class Ride {
 
     public int time;
     public double distance;
-    public enum RideType {NORMAL, PREMIUM};
-    public RideType rideType;
+    public CabRides cabRides;
 
-    public Ride( double distance, int time, RideType rideType) {
+    public Ride( double distance, int time, CabRides cabRides) {
         this.time = time;
         this.distance = distance;
-        this.rideType = rideType;
+        this.cabRides = cabRides;
     }
 }
